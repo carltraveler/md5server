@@ -1,0 +1,4 @@
+{
+	"restPort": "18080",
+	"levelDBName": "phoneNumberMd5"
+}
