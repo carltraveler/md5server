@@ -8,8 +8,8 @@ import (
 	"syscall"
 
 	"github.com/ontio/mdserver/cmd"
-	"github.com/ontio/mdserver/md5config"
 	"github.com/ontio/mdserver/core"
+	"github.com/ontio/mdserver/md5config"
 	"github.com/ontio/mdserver/restful"
 	"github.com/ontio/ontology/common/log"
 )
@@ -80,4 +80,5 @@ func waitToExit() {
 		}
 	}()
 	<-exit
+	core.DefServerRun.Store.Close()
 }
